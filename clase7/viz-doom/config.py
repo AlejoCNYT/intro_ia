@@ -24,14 +24,15 @@ Q_EPSILON_DECAY = 3 / NUMBER_OF_EPISODES
 
 PLAYER_INITIAL = 4
 
-LEFT_WALL = 240
+# Mejor no mover estas metricas, son temas de geometria
+LEFT_WALL = 240 
 RIGHT_WALL = -170
 BLOCK = 51.25
 LAST_BLOCK = 7
 FIRST_BLOCK = 0
 POS_BLOCK_RANGE = tuple([BLOCK * i + RIGHT_WALL for i in range(1, 8)])
 
-
+# Con 20 entrenamientos, queda entrenado y solo hace 4->3->2->1->disparar
 class AnimationConstants:
     PLAYER_START_UP_FPS = 60
     ANIM_MOV_STOP_FPS = 60
